@@ -2,7 +2,6 @@ import speech
 
 import speech_recognition as sr
 import nltk
-# nltk.download('popular')
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
