@@ -18,10 +18,15 @@ classes = pickle.load(open('labels.pkl','rb'))
 
 def listen_to_speech():
     recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("Mendengarkan...")
-        audio = recognizer.listen(source)
+    # with sr.Microphone() as source:
+    #     print("Mendengarkan...")
+    #     audio = recognizer.listen(source)
+    audiowav = sr.AudioFile("temp.wav")
+    # Initialize recognizer class                                       
 
+    with audiowav as source:
+        print("Mendengarkan...")
+        audio = recognizer.record(source)
     try:
         text = recognizer.recognize_google(audio, language="id-ID")
         return text

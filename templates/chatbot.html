@@ -194,6 +194,9 @@
           $.ajax({
             url: "/listen_speech",
             type: "POST",
+            data: {
+              rawdata:base64,
+            },
             success: function (data) {
               appendMessage(
                 "You",

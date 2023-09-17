@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 import datetime
 import chatbot
 from speech import listen_to_speech, chatbot_response
-
+import base64
 
 # Create flask app
 flask_app = Flask(__name__)
@@ -28,13 +28,22 @@ def createDatabase():
 def halchatbot():
     return render_template('chatbot.html')
 
+
+
 @flask_app.route('/listen_speech', methods=['POST'])
 def listen_speech():
+    encode_string = base64.b64encode(open("audio.wav", "rb").read())
+    wav_file = open("temp.wav", "wb")
+    decode_string = base64.b64decode(encode_string)
+    wav_file.write(decode_string)
     spoken_text = listen_to_speech()  # Call your listen_to_speech function here
+    print(spoken_text)
     if spoken_text:
         response = chatbot_response(spoken_text)  # Call your chatbot_response function here
+        print(response)
         return jsonify({"user_message": spoken_text, "bot_response": response})
     else:
+        print("no spech")
         return jsonify({"error": "No speech detected"})
 
 @flask_app.route('/get')
