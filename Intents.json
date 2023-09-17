@@ -1,0 +1,283 @@
+{
+  "intents":[
+    {"tag": "notfound",
+      "patterns": ["", "", "", "", ""],
+      "responses": ["Maaf tidak tahu","saya tidak tahu","kata diluar kemampuan kami","kami tidak tahu, mungkin anda bisa menanyakan mengenai seputar Titik-Titik Lokasi Jejak Rempah", "mungkin anda bisa menanyakan mengenai aplikasi ini"],
+      "context": [""]
+    },
+    {"tag": "salam",
+      "patterns": ["Hay", "Hy", "Hallo","Hey","Hola", "Hello", "Hai","p","hai","halo","hay","hai","mikum","assamualaikaum","hi"],
+      "responses": ["Halo, terima kasih sudah menyapa", "Hallo, senang bertemu denganmu, ada yang bisa saya lakukan?", "Hai, ada yang bisa saya bantu?"], 
+      "context": [""]
+    },
+    {"tag": "selamat tinggal",
+      "patterns": ["Sampai jumpa", "dadah", "Selamat tinggal", "Senang mengobrol denganmu, selamat tinggal", "Sampai nanti","dah"], 
+      "responses": ["Sampai jumpa!", "Semoga harimu menyenangkan", "Bye! Segera kembali lagi."], 
+      "context": [""]
+    },
+    {"tag": "terima kasih",
+      "patterns": ["Terima kasih", "Thanks","Thank you", "Itu membantu", "Luar biasa, terima kasih", "Terima kasih telah membantu saya","Ok, terima kasih","makasih","terimakasih","thq"], 
+      "responses": ["Yupp!! Senang membantu!", "Yap ^-^ Setiap saat!", "Dengan senang hati"],
+      "context": [""]
+    },
+    {"tag": "tidak bertanya",
+      "patterns": [],
+      "responses": ["Maaf, tidak dapat memahami Anda", "Tolong beri saya info lebih lanjut", "Tidak yakin saya mengerti"],
+      "context": [""]
+    },
+    {"tag": "ok",
+      "patterns": ["ok","baiklah","oke","ya"],
+      "responses": ["oke","baik ^-^","baiklah ^-^"],
+      "context": [""]
+    },
+    {"tag": "sejarah pelabuhan jongor",
+      "patterns" :["sejarah"," sejarah Pelabuhan Jongor di Kota Tegal","bagaimana sejarahnya?","bagaimana sejarah pelabuhan jongor kota tegal?"],
+      "responses" :["Pelabuhan Tegal memiliki sejarah yang kaya dan berawal sejak abad ke-15. Ki Gede Sebayu dikatakan telah mengembangkan pelabuhan tua di muara Kali Gung untuk mengangkut bahan pangan. Nama Tetegal berasal dari kata tanah tegal, mengingat wilayah sekitar pelabuhan ini adalah tanah subur yang digunakan untuk pertanian.Pelabuhan Tegal semakin dikenal ketika penjelajah dan pedagang Portugis, Tome Pires, singgah di sana pada akhir abad ke-15. Dia mencatat bahwa Tetegual adalah wilayah dengan pelabuhan yang ramai dan lahan pertanian yang subur. Zaman Mataram juga menjadikan Tegal sebagai kota penting dalam sektor maritim, dan Sultan Agung memilihnya sebagai tempat untuk mengangkut beras dengan perahu untuk persediaan tentara Mataram dalam perang melawan VOC di Batavia. Pada abad ke-18, Tegal jatuh ke tangan Hindia Belanda, dan pelabuhan ini mulai dikembangkan. Tegal dikenal sebagai Haven Zucker (Pelabuhan Gula) karena wilayah ini menjadi pusat produksi gula di Karesidenan Pekalongan. Pelabuhan Tegal menjadi tempat pengiriman gula ke berbagai daerah di Hindia Belanda. Selain itu, pelabuhan ini juga menjadi pusat pengangkutan kapal penumpang dan surat. Perusahaan jasa layanan kapal penumpang seperti Rotterdamsche Lloyd (RL) dan Stoomvaart Maatshappij Nederland (SMN) membuka rute pelayaran ke berbagai kota di Hindia Belanda. Inilah gambaran singkat sejarah Pelabuhan Tegal yang kaya dan penting dalam perdagangan dan sejarah Hindia Belanda."]
+    },
+    {"tag" :"di bangun nya pelabuhan jongor",
+      "patterns" :["Kapan Pelabuhan Jongor pertama kali dibangun?","Kapan sejarah Pelabuhan Jongor dimulai?","Pelabuhan Jongor di Kota Tegal dibangun pada tahun berapa?"],
+      "responses" :["Pelabuhan Tegal memiliki sejarah panjang yang dimulai sejak abad ke-15. Awalnya digunakan untuk mengangkut bahan pangan karena wilayah sekitarnya subur. Selama abad ke-18, Hindia Belanda mengembangkan pelabuhan ini, dan itu menjadi pusat perdagangan gula dan transportasi kapal."]
+    },
+    {"tag": "lokasi Pelabuhan Jongor",
+    "patterns" :["alamat pelabuhan jongor kota tegal"," di mana Pelabuhan Jongor di Kota Tegal","lokasi pelabuhan jongor kota tegal?"],
+    "responses" :["44XH+9G7, Jl. Jongor, Tegalsari, Kec. Tegal Bar., Kota Tegal, Jawa Tengah 52111."]
+    },
+    {"tag": "jam pelabuhan Jongor",
+    "patterns" :["jam buka pelabuhan jongor kota tegal","jam berapa pelabuhan jongor kota tegal dibuka","pelabuhan jongor kota tegal buka setiap hari apa?"],
+    "responses" :["Pelabuhan Jongor Kota Tegal buka setiap hari selama 24 jam"]
+    },
+    {"tag" : "Tujuan Learning Center Bawang Putih di Tuwel",
+      "patterns" :["Apa tujuan utama dari pendirian Learning Center Bawang Putih tersebut?","Tujuan pendirian Learning Center Bawang Putih"],
+      "responses" :["Tujuan utama dari pendirian Learning Center Bawang Putih adalah mendorong produktivitas bawang putih di Indonesia menjadi lebih optimal dan mengurangi ketergantungan pada impor."]
+    },
+    {"tag" :"lokasi Learning Center Bawang Putih di Tuwel",
+      "patterns" :["Di mana Learning Center Bawang Putih ini berlokasi?","Dimana lokasi learning Bawang putih di jateng berada?","Dimana Learning Center Bawang Putih di resmikan Ganjar"],
+      "responses" :["Learning Center Bawang Putih ini berlokasi di UPTD Klinik Pertanian Bojong, Desa Tuwel, Kecamatan Bojong."]
+    },
+    {"tag" :"jam operasional Learning Center Bawang Putih di Tuwel",
+      "patterns" :["Learning Center Bawang Putih buka setiap hari apa?","learning Center Bawang putih buka jam berapa?"],
+      "responses" :["Learning Center Bawang Putih ini buka setiap hari Senin-Jumat Pukul 08.00-16.00 WIB"]
+    },
+    {"tag" :"proses Penyulingan Cengkeh di Bumijawa",
+      "patterns" :["Bagaimana proses penyulingan cengkeh di Bumijawa?", "Proses penyulingan cengkeh di bumijawa"],
+      "responses" :["Penyulingan cengkeh di Bumijawa adalah proses penting dalam industri rempah-rempah. Proses ini melibatkan beberapa langkah, seperti pemanenan cengkeh, pemisahan bunga dan tangkai, penyulingan menggunakan uap air, dan pemisahan minyak dari air."]
+    },
+    {"tag" : "hasil Penyulingan Cengkeh di Bumijawa",
+      "patterns" :["Apa yang dihasilkan dari penyuligan Cengkeh","hasil dari penyulingan cengkeh","hasil dari proses penyulingan cengkeh?"],
+      "responses" :["Proses penyulingan ini menghasilkan minyak atsiri cengkeh yang digunakan dalam berbagai industri, termasuk makanan, farmasi, dan parfum."]
+    },
+    {"tag" : "Perkebunan Cengkeh Bumijawa",
+      "patterns" :["Apa yang anda ketahui tentang Perkebunan Cengkeh Bumijawa di Dukuh Pereng dan di Desa Bumijawa","apa yang kamu ketahui tentang perkebunan cengkeh di bumijawa?","jelaskan tentang perkebunan cengkeh di bumijawa."],
+      "responses" :["Perkebunan cengkeh di Bumijawa, terutama di Dukuh Pereng dan Desa Bumijawa, adalah salah satu aset penting dalam sektor pertanian di wilayah tersebut.",
+      "Wilayah ini memiliki iklim dan kondisi tanah yang sangat sesuai untuk pertumbuhan cengkeh berkualitas tinggi."]
+    },
+    {"tag" : "ikloim Perkebunan Cengkeh Bumijawa",
+      "patterns" : ["Bagaimana kondisi iklim di Bumijawa memengaruhi pertumbuhan cengkeh?","apakah iklim di bumijawa mempengaruhi pertumbuhan cengkeh?","apa pengaruh iklim bagi pertumbuhan cengkeh?"],
+      "responses" :["Iklim di Bumijawa sangat memengaruhi pertumbuhan cengkeh. Curah hujan yang merata sepanjang tahun, suhu yang stabil, kelembaban tinggi, dan intensitas cahaya matahari yang memadai adalah faktor-faktor penting yang mendukung pertumbuhan cengkeh yang berkualitas. Namun, fluktuasi cuaca dan perubahan iklim dapat menjadi tantangan bagi petani cengkeh, yang memerlukan manajemen yang baik untuk menjaga pertumbuhan tanaman yang optimal."]
+    },
+    {"tag" :"proses panen Cengkeh Bumijawaa",
+      "patterns" :["Bagaimana proses pemanenan bunga cengkeh yang belum mekar dilakukan?","Bagaimana proses pemanenan cengkeh yang belum mekar?","bagaimana proses panen bunga cengkeh yang belum mekar?"],
+      "responses" :["Proses pemanenan bunga cengkeh yang belum mekar melibatkan beberapa tahapan. Pertama, petani cengkeh mengawasi dengan cermat tanaman cengkeh mereka untuk memilih bunga yang tepat yang belum mekar sepenuhnya. Setelah itu, mereka menggunakan alat khusus, seperti tang atau pisau yang tajam, untuk memotong tangkai bunga tersebut dengan hati-hati. Bunga yang dipanen harus dalam kondisi yang sempurna, tidak rusak, dan belum terlalu matang. Setelah dipanen, bunga cengkeh ini kemudian dijemur dengan baik untuk mengeringkannya. Selanjutnya, bunga cengkeh yang sudah kering akan diolah lebih lanjut, biasanya dengan proses penyulingan, untuk menghasilkan minyak atsiri cengkeh yang berharga. Proses pemanenan yang hati-hati dan pemrosesan yang tepat sangat penting untuk memastikan kualitas minyak atsiri cengkeh yang optimal."]
+    },
+    {"tag" : "Perekonimian Perkebunan Cengkeh Bumijawa",
+      "patterns" :["Bagaimana perkebunan cengkeh mendukung perekonomian setempat?","bagaimana dampak perkebunan pada perekonomian sekitar?"],
+      "responses" :["Perkebunan cengkeh di Bumijawa memberikan manfaat ekonomi dengan menciptakan pekerjaan, meningkatkan pendapatan melalui penjualan cengkeh, dan memperkuat infrastruktur setempat. Selain itu, kerjasama dengan pemerintah dan lembaga terkait meningkatkan produktivitas dan kualitas cengkeh, memberikan dampak positif pada perekonomian lokal."]
+    },
+    {"tag" :"Rest Area Banjaratma",
+      "patterns" :["Apa yang anda ketahui tentang rest area banjartma?","apa itu rest area banjaratma ?","apa yang kamu ketahui tentang rest area banjaratma itu?"],
+      "responses" :["Rest area Banjaratma KM 260 B adalah tempat istirahat dan pelayanan (TIP) terkenal di Indonesia. Bangunan ini bersejarah karena dibangun pada tahun 1908 oleh perusahaan perkebunan N.V. Cultuur Maatschappij yang berpusat di Amsterdam. Rest area ini dikenal karena menggabungkan arsitektur indah dan kuliner khas yang menarik."]
+    },
+    {"tag" :"pembangunan Rest Area Banjaratma",
+      "patterns" :["Kapan bangunan bekas Pabrik Gula Banjaratma ini dibangun?","kapan pabrik gula banjaratma dibangun?","kapan pembangunan pabrik gula banjaratma ini?"],
+      "responses" :["Bangunan bekas Pabrik Gula Banjaratma ini dibangun pada tahun 1908 oleh perusahaan perkebunan N.V. Cultuur Maatschappij."]
+    },
+    {"tag" : "Rest Area terbaik",
+      "patterns" :["Mengapa Rest area Banjaratma dianggap sebagai rest area terbaik di Indonesia?","mengapa rest area banjaratma terbaik?","kenapa rest area banjaratma terbaik?"],
+      "responses" :["Rest area KM 260 B dianggap sebagai rest area terbaik di Indonesia karena kombinasi antara keindahan arsitektur bangunan yang bersejarah dengan kelezatan kuliner khas yang ditawarkan di tempat ini. Bangunan ini memiliki nilai sejarah sebagai bekas Pabrik Gula Banjaratma yang dibangun pada tahun 1908. Selain itu, rest area ini menawarkan pengalaman unik dengan suasana yang berbeda dari rest area biasa, sehingga menjadi daya tarik tersendiri bagi para pengunjung."]
+    },
+    {"tag" : "Pasar Bawang Merah Sengon",
+      "patterns" :["Di mana letak Pasar Bawang dan Lombok Sengon?","dimana pasar Bawang merah sengon?","dimana pasar sengon berada?","dimana letak pasar sengon?"],
+      "responses" :["Pasar Bawang dan Lombok Sengon terletak di Desa Sengon Kecamata Tanjung Kabupaten Brebes."]
+    },
+    {"tag" :"Pasar Bawang Merah Sengon",
+      "patterns":["Apa yang menjadi fokus utama perdagangan di Pasar Bawang Merah Sengon, Tanjung, Brebes?","apa saja komoditas yang ada di pasar Bawang merah sengon?","apa fokus utama pasar bawang merah sengon?","apa fokus utama dagangan di pasar bawang sengon, brebes?"],
+      "responses":["Fokus utama perdagangan di Pasar Bawang dan Lombok Sengon adalah komoditas hortikultura, khususnya bawang merah dan cabai."]
+    },
+    {"tag" : "Pasar Bawang Merah Sengon",
+      "patterns" :["Apakah Pasar Bawang dan Lombok Sengon memiliki pengaruh dalam pasokan bawang merah dan cabai ke pasar-pasar lain di Provinsi DKI Jakarta dan Jawa Barat?","apakah pengaruh pasar bawang merah sengon di pulau jawa?","apa pengaruh pasar bawang merah sengon didaerah jawa?","bagaimana pengaruh pasar bawang merah sengon di jawa barat dan sekitarnya?"],
+      "responses" :["Ya, Pasar Bawang dan Lombok Sengon memiliki pengaruh dalam pasokan bawang merah dan cabai ke pasar-pasar lain di Provinsi DKI Jakarta dan Jawa Barat. Komoditas bawang merah dan cabai yang diperdagangkan di pasar ini biasanya dibawa oleh pedagang besar untuk memenuhi permintaan di beberapa pasar induk di daerah tersebut. Pasar Bawang dan Lombok Sengon berperan sebagai salah satu sumber pasokan utama untuk komoditas tersebut di wilayah tersebut."]
+    },
+    {"tag" : "kondisi Pasar Bawang Merah Sengon",
+      "patterns" :["Bagaimana kondisi Pasar Bawang Sengon Brebes saat inia?", "kondisi pasar bawang merah sengon sekarang", "Fasilitas di pasar bawang merah sengon"],
+      "responses" :["Pasar tersebut kini sudah ditempati para pedagang bawang. Dilengkapi dengan fasilitas toilet dan musholla, Pasar Bawang Sengon Brebes memberikan kenyamanan kepada pedagang dan pembeli."]
+    }, 
+    {"tag" : "sejarah Pelabuhan Kluwut",
+      "patterns":["Apa yang menjadi sejarah awal Pelabuhan Kluwut di Kabupaten Brebes?","sejarah pelabuhan keluwut","jelaskan sejarah pelabuhan kluwut?","bagaimana sejarah pelabuhan kluwut?"],
+      "responses":["Sejarah awal Pelabuhan Kluwut di Kabupaten Brebes bermula dari abad XIX hingga abad XX, ketika terdapat sejumlah kampung yang berada di sepanjang aliran sungai Cipamali (Pemali). Salah satu sungai yang melintasi desa Sawojajar adalah anak Sungai Pemali, yaitu Sungai Kluwut, di mana terdapat perkampungan nelayan. Pada masa itu, wilayah pesisir Laut Jawa Brebes menjadi bagian dari wilayah kekuasaan Belanda hingga Selat Madura. Meskipun bukan jalur utama perniagaan, wilayah pesisir Laut Jawa Brebes memiliki sejarah maritim yang penting."]
+    },
+    {"tag" :"kondisi ekonomi Pelabuhan Kluwut",
+      "patterns" :["Bagaimana kondisi ekonomi daerah sekitar Pelabuhan Kluwut saat ini?","kondisi ekonomi di pelabuhan kluwut?","bagaimana kondisi ekonomi di pelabuhan kluwut?","jelaskan ekonomi sekitar pelabuhan kluwut?"],
+      "responses":["Kondisi ekonomi daerah sekitar Pelabuhan Kluwut saat ini cenderung stagnan, terutama karena pelabuhan ini tidak mengalami perkembangan yang signifikan. Pendangkalan sungai Kluwut, kendala dalam revitalisasi pelabuhan perikanan Kluwut, serta persaingan dengan pelabuhan serupa yang memiliki keunggulan telah mempengaruhi dinamika ekonomi di daerah tersebut. Minimnya pendatang atau imigran juga berdampak pada ekonomi lokal. Hal ini berpotensi memengaruhi pendapatan asli daerah (PAD) di Kabupaten Brebes. Oleh karena itu, masalah-masalah tersebut perlu diperhatikan dalam perencanaan dan kebijakan pembangunan di daerah sekitar Pelabuhan Kluwut."]
+    },
+    {"tag" :"fasilitas Pelabuhan Kluwut",
+      "patterns" :["fasilitas Pelabuhan Kluwut?","apa saja fasilitas di pelabuhan kluwut?","fasilitas yang ada di pelabuhan kluwut?"],
+      "responses":["Pelabuhan yang berada di Sungai Kluwut ini memiliki fasilitas seperti Tempat Pelelangan Ikan (TPI) cukup besar yang terintegrasi dengan Pusat Pendaratan Ikan."]
+    },
+    {"tag" :"proses kerja Lapak Bawang Merah Luwungragi",
+      "patterns":["Bagaimana proses kerja buruh petik yang bekerja di lapak bawang merah Luwungragi?","bagaimana cara kerja buruh?","bagaimana proses kerja buruh?","bagaimana proses kerja di lapak bawang merah luwungragi?"],
+      "responses" :["Proses kerja buruh petik di lapak bawang merah Luwungragi melibatkan tahapan pembersihan umbi bawang merah dari kotoran dan tanah, sortasi untuk memisahkan umbi yang baik dari yang cacat, grading untuk mengelompokkan sesuai ukuran dan mutu, serta penyimpanan dalam lapak. Jam kerja bisa mencapai 12 jam sehari, dengan jadwal yang fleksibel tergantung pada tingkat produksi. Meskipun bekerja keras, upah yang diterima buruh petik sering tidak sebanding dengan waktu dan usaha yang mereka luangkan."]
+    },
+    {"tag": "Lapak Bawang Merah Luwungragi",
+      "patterns":["Bagaimana lapak bawang merah di Desa Luwungragi digunakan dalam proses produksi bawang merah?","bagaimana lapak bawang merah di desa luwungragi?","bagaimana proses lapak disana?","bagaimana proses produksi dan jual beli di desa luwungragi?"],
+      "responses":["Lapak bawang merah di Desa Luwungragi digunakan sebagai tempat berkumpul dan pengolahan hasil produksi bawang merah. Para buruh petik bawang merah bekerja di lapak ini untuk memisahkan umbi bawang merah dari kotoran, melakukan sortasi dan grading. Lapak berfungsi sebagai pusat pengolahan dan pengepakan bawang merah sebelum dipasarkan."]
+    },
+    {"tag" : "Wisata Kesehatan Jamu Kalibakung",
+      "patterns":["Apa yang dapat ditemukan di Wisata Kesehatan Jamu Kalibakung?","apa saja yang dapat di temukan di wkj kalibakung?","apa saja yang bisa di temukan saat di lokasi wisata jamu kalibakung?","apa yang ada di sana?"],
+      "responses":["Di Wisata Kesehatan Jamu Kalibakung, Anda dapat menemukan taman toga yang memiliki sekitar 245 jenis tanaman obat tradisional (toga) yang ditanam dan ditata rapi. Selain itu, objek wisata ini juga melayani pasien pengobatan herbal dengan fasilitas seperti ruang pendaftaran, ruang tunggu pasien, dan ruang periksa. Ada juga griya jamu di tempat ini yang menggantikan peran apotek. Di sini, dokter akan berkoordinasi dengan apoteker untuk menyediakan ramuan jamu yang terbuat dari berbagai ramuan alami. Harga yang dibanderol untuk satu ramuan jamu cukup terjangkau, yaitu Rp.15.000 saja."]
+    },
+    {"tag" : "Wisata Kesehatan Jamu Kalibakung",
+      "patterns":["Apa yang digunakan sebagai pengganti apotek di WKJ Kalibakung?","apa yang di gunakan pengganti apotek?","apa yang mengganti fungsi apotek di wisata kesehatan jamu kalibakung?"],
+      "responses":["Sebagai pengganti apotek di WKJ Kalibakung, terdapat griya jamu. Griya jamu ini berfungsi sebagai tempat di mana dokter berkoordinasi dengan apoteker untuk menyiapkan ramuan jamu yang terdiri dari berbagai ramuan alami. Griya jamu ini merupakan bagian integral dari proses pengobatan herbal di lokasi tersebut."]
+    },
+    {"tag":"harga jamu",
+      "patterns":["Berapa harga yang dibanderol untuk satu ramuan jamu di sana?","berapa harga jamu?","berapa harga satuan jamu?","berapa harganya?","berapa uang yang di keluarkan untuk membeli jamu?"],
+      "responses":["Harga yang dibanderol untuk satu ramuan jamu di WKJ Kalibakung adalah Rp. 15.000 saja."]
+    },
+    {"tag":"lokasi Wisata Kesehatan Jamu Kalibakung",
+      "patterns":["di mana lokasi WIsata kesehatan jamu kalibakung?","lokasi wisata kesehatan jamu kalibakung","alamat wisata kesehatan jamu kalibakung?","di mana alamat wisata kesehatan jamu kalibakung?"],
+      "responses":["V4WJ+FR2, Jl. Raya Moga-Guci, Kebonagung, KECAMATAN:, Kec. Balapulang, Kabupaten Tegal, Jawa Tengah 52464"]
+    },
+    {"tag":"jam operasional Kesehatan Jamu Kalibakung",
+      "patterns":["jam operasional WIsata kesehatan jamu kalibakung?","jam buka wisata kesehatan jamu kalibakung","jam berapa wisata kesehatan jamu kalibakun dibuka?","wisata kesehatan jamu kalibakung buka setiap hari apa?"],
+      "responses":["Wisata Kesehatan Jamu Kalibakung buka setiap hari, senin-kamis pukul 07.00-14.00 Jumat pukul 07.00-11.00 Sabtu puku 07.00-12.30 Minggu Pukul 17.00-21.30 WIB"]
+    },
+    {"tag":"Ayam Panggang Rempah H. Bari",
+      "patterns":["Apa yang membuat Ayam Panggang H. BARI Wiradesa di Kota Pekalongan begitu digandrungi?","kenapa ayam panggang H. BARI digandrungi","apa yang membuat ayam panggang H. BARI menjadi favorit?","kenapa ayam panggang H. Bari begitu di gandrungi?"],
+      "responses":["Ayam Panggang H. BARI Wiradesa di Kota Pekalongan begitu digandrungi karena menawarkan Ayam Panggang yang nikmat dan menggugah selera, serta menu lain seperti Nasi Goreng, Mie Goreng, Bakso, Sate, dengan harga terjangkau. Tempat ini juga terkenal karena pelayanannya yang ramah dan cepat, serta suasana tempat makan yang cozy dan nyaman dengan nuansa klasik yang dipadukan dengan desain modern."]
+    },
+    {"tag":"menu Ayam Panggang Rempah H. Bari",
+      "patterns":["Apa saja menu yang ditawarkan oleh Ayam Panggang H. BARI Wiradesa selain Ayam Panggang?","apa menu saja menu di warung Makan H. BARI?","apa saja menu yang di tawarkan warung makan H. BARI selain ayam panggang?","sebutkan menu selain ayam panggang di ayam panggang H. Bari"],
+      "responses":["Selain Ayam Panggang, Ayam Panggang H. BARI Wiradesa juga menawarkan menu lain seperti Nasi Goreng, Mie Goreng, Bakso, Sate, dan masih banyak lagi. Semua menu tersedia dengan harga yang terjangkau."]
+    },
+    {"tag" :"Lokasi Ayam Panggang Rempah H. Bari",
+      "patterns":["Di mana lokasi Ayam Panggang H. BARI Wiradesa berada?","dimana lokasi ayam panggang rempah pekalongan?","dimana keberadaan ayam panggang H. bari?","dimana lokasinya?"],
+      "responses":["Ayam Panggang H. BARI Wiradesa berlokasi di alamat berikut: Jalan Raya Rotan, Gang Ikhlas, Wiradesa, Pekalongan."]
+    },
+    {"tag":"Sejarah Museum Batik Pekalongan",
+      "patterns":["Bagaimana sejarah Museum Batik Pekalongan?","Bagaimana sejarah berdirinya Museum Batik Pekalongan?","jelaskan sejarah museum batik pekalongan","bagaimana sejarahnya?","apa yang diketahui tentang museum batik pekalongan?"],
+      "responses":["Museum Batik Pekalongan adalah museum batik yang terletak di Jalan Jetayu No.1 Pekalongan, Jawa Tengah. Museum ini memiliki luas 40 meter persegi dan menyimpan koleksi batik yang mencapai 1149 item, termasuk wayang beber kain batik yang berusia ratusan tahun dan alat tenun tradisional. Gedung museum ini dulunya adalah kantor balai kota Pekalongan yang pada masa kolonial Belanda berfungsi sebagai kantor keuangan. Pada tahun 2006, museum ini diresmikan oleh Presiden Susilo Bambang Yudhoyono dan bertujuan menjadi pusat informasi dan penelitian mengenai batik serta menyimpan berbagai jenis batik dari klasik hingga kontemporer."]
+    },
+    {"tag":"Koleksi Museum Batik Pekalongan",
+      "patterns":["Apa koleksi utama yang dapat ditemukan di museum ini?","koleksi utama di museum batik","apa koleksi utama museum?","apa saja koleksi utama museum pekalongan?"],
+      "responses":["Koleksi utama yang dapat ditemukan di Museum Batik Pekalongan meliputi 1149 item batik, termasuk wayang beber dari kain batik yang berusia ratusan tahun dan alat tenun tradisional."]
+    },
+    {"tag":"Lokasi Museum Batik Pekalongan",
+      "patterns":["di mana lokasi museum batik pekalongan?","di mana alamat museum batik pekalong","lokasi museum batik pekalongan?","alamat museum batik pekalongan"],
+      "responses":["Jl. Jetayu No.3, Panjang Wetan, Kec. Pekalongan Utara, Kota Pekalongan, Jawa Tengah 51141."]
+    },
+    {"tag":"Jam Operasional Museum Batik Pekalongan",
+    "patterns":["Museum batik pekalongan buka jam berapa ?","jam berapa museum batik pekalongan dibuka","setiap hari apa museum batik pekalongan dibuka?","jam operasional museum batik pekalongan"],
+    "responses":["Museum Batik Pekalongan buka setiap hari pukul 08.00-15.00WIB"]
+    },
+    {"tag":"Didirikan Museum Batik Pekalongan",
+    "patterns":["Kapan Museum batik pekalongan didirikan?","tahun berapa  museum batik pekalongan didirikan","tanggal berapa museum batik pekalongan didirikan?"],
+    "responses":["12 Juli 1972"]
+    },
+    {"tag":"Sejarah Pelabuhan Pekalongan",
+      "patterns":["bagaimana sejarah pelabuhan pekalongan?","jelaskan sejarah pelabuhan pekalongan?","apa itu pelabuhan pekalongan?"],
+      "responses":["Pelabuhan Pekalongan adalah salah satu pelabuhan terbesar di Pulau Jawa yang berfungsi sebagai pelabuhan niaga sejak tahun 1859. Pelabuhan ini didirikan oleh pemerintah Hindia Belanda untuk mengangkut komoditas seperti gula, kopi, teh, dan batik dari Pekalongan ke Eropa. Nama Pekalongan berasal dari kata Along yang berarti dapat banyak dalam bahasa Jawa. "]
+    },
+    {"tag":"Di resmikan Pelabuhan Pekalongan",
+      "patterns":["kapan pelabuhan pekalongan dibuka?","pelabuhan kapan diresmikan?","pelabuhan diresmikanya kapan?","kapan pelabuhan diresmikan?","pelabuhan diresmikan pada tahun berapa?"],
+      "responses":["Pelabuhan Pekalongan dibuka secara resmi pada 31 Mei 1859 dengan status pelabuhan menengah. Aktivitas niaganya mulai dilakukan sehari setelahnya atau pada 1 Juni 1859"]
+    },
+    {"tag":"Menu Cafe Limun Oriental Pekalongan ",
+    "patterns":["menu di cafe Limun Oriental di Pekalongan?", "apa saja menu di cafe Limun Oriental di Pekalongan", "menu yang ada di cafe Limun Oriental di Pekalongan"],
+    "responses":["Cafe Limun Oriental Pekalongan menawarkan beragam menu kuliner, termasuk hidangan khas Asia, makanan penutup, minuman, dan banyak lagi. Menu mungkin mencakup hidangan seperti mie, nasi, dim sum, sushi, serta minuman seperti teh, kopi, dan minuman khas."]
+    },
+    {"tag":"Jam operasional Cafe Limun Oriental Pekalongan ",
+    "patterns":["jam operasional di cafe Limun Oriental di Pekalongan?", "apakah cafe Limun Oriental di Pekalongan memiliki jam operasional?"],
+    "responses":["Cafe Limun Oriental Pekalongan mungkin memiliki jam operasional yang bervariasi. "]
+    },
+    {"tag":"Keistimewaan Cafe Limun Oriental Pekalongan ",
+      "patterns":["keistimewaan Limun Oriental di Pekalongan?", "apa yang istimewa dari Limun Oriental di Pekalongan"],
+      "responses":["Cafe Limun Oriental Pekalongan istimewa karena merupakan kafe yang menawarkan pengalaman kuliner dan suasana yang unik. Terletak di kota Pekalongan, kafe ini memiliki berbagai fitur dan layanan yang menarik."]
+    },
+    {"tag":"Varian rasa Cafe Limun Oriental Pekalongan",
+      "patterns":["Apa saja varian rasa Limun Oriental?", "varian rasa limun oriental", "rasa limun oriental", "apa  saja rasa Limun Oriental Pekalongan?"],
+      "responses":["Pada masa kejayaannya, minuman Limun Oriental memproduksi dengan 9 varian rasa yang beragam, seperti nanas, kopi moka, jeruk, framboze, sirsak, sitrun, anggur, leci, dan air soda. Berbagai pilihan rasa inilah yang membuat Limun Oriental menjadi minuman yang sangat diminati oleh berbagai kalangan di Pekalongan dan sekitarnya. Namun, saat ini, beberapa varian rasa tersebut mungkin sudah tidak diproduksi lagi, dan yang tersedia terbatas."]
+    },
+    {"tag":"Lokasi Cafe Limun Oriental Pekalongan",
+      "patterns":["di mana Cafe Limun Oriental Pekalongan", "alamat Cafe Limun Oriental Pekalongan", "lokasi Cafe Limun Oriental Pekalongan"],
+      "responses":["Terletak di Jalan Rajawali Utara No. 15 Pekalongan, persis di belakang Museum Batik dan Rutan Pekalongan (yang dulunya benteng)."]
+    },
+    {"tag":"Museum Kota Lama",
+      "patterns" :["apa itu museum kota lama?"],
+      "responses":["Museum Kota Lama adalah sebuah museum yang menampilkan sejarah Kota Semarang. Museum ini berlokasi di Jalan Cendrawasih No 1 A, Purwodinatan, Kecamatan Semarang Tengah. Museum ini dibuka pada bulan Februari 2022 dan merupakan museum sejarah yang kaya teknologi"]
+    },
+    {"tag":"Lokasi",
+      "patterns" :["di mana museum kota lama?", "lokasi museum kota lama", "di mana lokasi museum kota lama?", "di mana alamat museum kota lama?", "alamat museum kota lama"],
+      "responses":["Jl. Cendrawasih No.1a, Purwodinatan, Semarang"]
+    },
+    {"tag":"fasilitas",
+      "patterns" :["fasilitas museum kota lama", "apa saja fasilitas di museum kota lama", "fasilitas apa yang ada di museum kota lama?"],
+      "responses":["Area Parkir, Toilet Umum, Spot Foto, Area Outdoor, Pusat Informasi"]
+    },
+    {"tag":"daya tarik",
+      "patterns" :["apa daya tarik museum kota lama", "daya tarik museum kota lama", "daya tarik yang ada di museum kota lama?"],
+      "responses":["Museum Kota Lama Semarang menyajikan sejarah Kota Semarang dan menampilkan benda-benda bersejarah. Dalam museum ini digunakan teknologi yang canggih seperti layar 3D yang akan membuat pengunjung merasa seperti berada dalam dunia virtual dan merasakan langsung sejarah Kota Semarang. Museum ini menyimpan sejarah kota Semarang sejak tahun 1547 dan ditampilkan dengan teknologi immersif yang menakjubkan. Jangan khawatir, ada tour guide yang siap menjelaskan sejarah Semarang. Koleksi yang disajikan termasuk artefak kuno seperti kereta api Dupo yang situs aslinya masih ada sampai saat ini."]
+    },
+    {"tag":"harga tiket masuk",
+      "patterns" :["berapa harga tiket masuk di museum kota lama", "harga tiket masuk museum kota lama", "harga tiket di museum kota lama?", "tiket masuk museum kota lama"],
+      "responses":["Berapa harga tiket masuk ke Museum Kota Lama Semarang? Tiket masuk ke museum ini gratis. Anda hanya perlu melakukan reservasi melalui aplikasi Lunpia."]
+    },
+    {"tag":"cara reservasi",
+      "patterns" :["cara reservasi di museum kota lama", "bagaimana cara museum kota lama?", "reservasi  di museum kota lama"],
+      "responses":["Download aplikasi Lunpia melalui Play Store ataupun App Store, Kemudian daftar dan isi data diri Anda. Setelahnya Anda akan mendapat kode barcode yang bisa ditukarkan dengan tiket fisik saat datang ke museum, Tiket tersebut nantinya sudah termasuk dengan tour guide yang akan menemani kunjungan Anda bersama rombongan."]
+    },
+    {"tag":"jam buka",
+      "patterns" :["buka jam berapa museum kota lama?", "museum kota lama buka jam beraoa?", "jam buka museum kota lama"],
+      "responses":["Museum Kota Lama Semarang buka setiap hari mulai  pukul 09.00-15.30 WIB. "]
+    },
+    {"tag":"Sejarah",
+      "patterns":["Bagaimaan Sejarah Kota Lama?"],
+      "responses":["Sejarah Kota Lama Semarang berawal dari kesepakatan antara Kerajaan Mataram Islam dengan pihak Belanda yang diwakili VOC pada tahun 1678. Semarang, yang merupakan kota pelabuhan berbasis ekonomi perdagangan, membuat VOC tertarik untuk menguasainya. Kota Lama Semarang adalah kawasan cagar budaya yang memiliki banyak bangunan-bangunan dengan gaya kolonial, seperti benteng Vijfhoek, gereja Blenduk, dan stasiun Tawang"]
+    },
+    {"tag":"Kota Lama Semarang",
+      "patterns":["Apa itu Kota Lama Semarang?", "Mengapa Kota Lama disebut Little Netherland?", "Mengapa Kota Lama mirip Belanda?", "Apa sebab julukan Little Netherland?"],
+      "responses":["Kota Lama Semarang adalah sebuah kawasan di Semarang yang pada abad 19-20 menjadi pusat perdagangan. Disebut Little Netherland karena lokasinya yang terpisah dengan lanskap mirip kota di Eropa serta adanya kanal-kanal air yang mengelilinginya, menjadikannya mirip miniatur Belanda di Semarang."]
+    },
+    {"tag":"Kota lama 1740-1743",
+      "patterns":["Pengaruh dari Peristiwa 1740-1743?", "dampak Kota Lama pada tahun 1740-1743?", "peristiwa signifikan 1740-1743?"],
+      "responses":["Pada tahun 1740-1743, terjadi peristiwa Geger Pacinan, perlawanan besar terhadap kekuasaan VOC di Pulau Jawa. Akibat perlawanan tersebut, dibangunlah fortifikasi mengelilingi kawasan Kota Lama Semarang. Namun, fortifikasi ini dibongkar pada tahun 1824 karena dianggap tidak sesuai dengan perkembangan kota yang pesat."]
+    },
+    {"tag":"Karakteristik",
+      "patterns":["Ciri-ciri bangunan Kota Lama?", "Apa karakteristik bangunan Kota Lama?", "Karakteristik utama bangunan?", "Bagaimana ciri bangunan Kota Lama?"],
+      "responses":["Karakteristik utama bangunan di Kota Lama Semarang mengikuti gaya Eropa sekitar tahun 1700-an. Ini mencakup ukuran pintu dan jendela yang besar, penggunaan kaca berwarna, bentuk atap yang unik, serta adanya ruang bawah tanah."]
+    },
+    {"tag":"Sejarah",
+      "patterns":["Bagaimana Sejarah Masjid Agung Demak?"],
+      "responses":["Masjid Agung Demak adalah salah satu masjid tertua di Indonesia yang dibangun pada abad ke-15 Masehi oleh Raden Patah dari Kerajaan Demak dan para Wali Songo. Masjid ini terletak di Kampung Kauman, Kelurahan Bintoro, Kecamatan Demak, Kabupaten Demak, Jawa Tengah. Masjid ini memiliki ciri khas berupa atap tumpang tiga yang melambangkan tingkatan iman, islam dan ihsan. Masjid ini juga memiliki pintu penangkal petir yang konon dibuat oleh Sunan Kalijaga dengan menggunakan kayu pohon aren"]
+    },
+    {"tag":"Lokasi",
+    "patterns":["Di mana letak Masjid Agung Demak?", "Masjid Agung Demak ada di mana?", "Di mana Masjid Agung Demak?", "Letak Masjid Agung Demak"],
+    "responses":["Jalan Sultan Fatah No.1, Demak, Indonesia"]
+    },
+    {"tag":"Tahun Berdiri",
+      "patterns":["Kapan Masjid Agung Demak Didirikan?", "Tahun berapa masjid agung demak didirikan", "Kapan Didirikannya masjid agung demak?", "Masjid Agung Demak berdiri tahun kapan?"],
+      "responses":["1479"]
+    },
+    {"tag":"Pendiri",
+      "patterns":["Siapa pendiri masjid agung demak?", "siapa yang mendirikan masjid agung demak?", "Pendiri masjid agung demak"],
+      "responses":["Masjid ini diyakini dibangun oleh Wali Sanga–penyebar agama Islam di Pulau Jawa–dengan sosok yang paling menonjol Sunan Kalijaga, pada masa penguasa Kesultanan Demak pertama, Raden Patah pada abad ke-15"]
+    },
+    {"tag":"Masjid Agung Demak Bintoro",
+      "patterns":["Apa saja yang ada di dalamn masjid agung demak?", "bagaimana di dalam masjid agung demak?", "apa isi di dalam masjid agung demak", "Isi di dalam masjid agung demak"],
+      "responses":["Di dalam lokasi kompleks masjid ini, terdapat beberapa makam raja-raja Kesultanan Demak termasuk di antaranya adalah Raden Patah yang merupakan raja pertama Kesultanan Demak dan para abdinya. Di kompleks ini juga terdapat museum–Museum Masjid Agung Demak–yang berisi berbagai hal mengenai riwayat berdirinya masjid ini"]
+    },
+    {"tag":"Arsitektur",
+      "patterns":["bagaimana arsitktur masjid agung demak?", "arsitektur masjid agung demak"],
+      "responses":["Dindingnya berasal dari keramik Vietnam. Dengan bentuknya yang berasal dari konvensi ukiran kayu dan batu bata Jawa, yang dianggap telah dipesan secara khusus. Penggunaan keramik daripada batu dianggap meniru masjid-masjid Persia."]
+    }
+          ]
+}
