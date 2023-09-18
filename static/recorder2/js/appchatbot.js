@@ -101,7 +101,7 @@ function createDownloadLink(blob) {
 	
 	var url = URL.createObjectURL(blob);
 	var au = document.createElement('audio');
-	var li = document.createElement('li');
+	var div = document.createElement('div');
 	var link = document.createElement('a');
 
 	//name of .wav file to use during upload and download (without extendion)
@@ -117,27 +117,22 @@ function createDownloadLink(blob) {
 	link.innerHTML = "Save to disk";
 
 	//add the new audio element to li
-	li.appendChild(au);
+	div.appendChild(au);
 	
-	//add the filename to the li
-	li.appendChild(document.createTextNode(filename+".wav "))
-
-	//add the save to disk link to li
-	li.appendChild(link);
 	
 	//upload link
 	var upload = document.createElement('a');
 	upload.href="#";
 	upload.innerHTML = "Upload";
-	appendMessage(BOT_NAME, BOT_IMG, "left", li);
+    appendMessage(PERSON_NAME, PERSON_IMG, "right", div.outerHTML);
 	var xhr=new XMLHttpRequest();
 	xhr.onload=function(e) {
 		if(this.readyState === 4) {
 		  console.log("Server returned: ",e.target.responseText);
 		  var data = e.target.responseText;
 		  data = JSON.parse(data);
+          appendMessage(BOT_NAME, BOT_IMG, "left", data.bot_response);
 		  
-		  appendMessage(PERSON_NAME, PERSON_IMG, "right", data.bot_response);
 
 		}
 	};
