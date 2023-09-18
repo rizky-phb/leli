@@ -97,25 +97,12 @@
           </div>
         </button>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-          $(document).ready(function () {
-            let isListening = false;
-
-            $("#listenButton").click(function () {
-              isListening = !isListening;
-              if (isListening) {
-                $("#microphoneIcon").css("color", "red");
-              } else {
-                $("#microphoneIcon").css("color", "white");
-              }
-            });
-          });
-        </script>
+     
       </form>
     </section>
 
     <!-- partial -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
     <script>
       const msgerForm = get(".msger-inputarea");
@@ -187,36 +174,53 @@
       }
     </script>
     <div id="speechResult"></div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/recorder2/js/recorder.js"></script>
+<script src="/static/recorder2/js/app.js"></script>
     <script>
       $(document).ready(function () {
+        let isListening = false;
+
         $("#listenButton").click(function () {
-          $.ajax({
-            url: "/listen_speech",
-            type: "POST",
-            data: {
-              rawdata:base64,
-            },
-            success: function (data) {
-              appendMessage(
-                "You",
-                "../static/img/ping.png",
-                "right",
-                data.user_message
-              );
-              appendMessage(
-                "JJr. Ask",
-                "../static/img/robo.png",
-                "left",
-                data.bot_response
-              );
-            },
-            error: function () {
-              alert("Error: No speech detected");
-            },
-          });
+          isListening = !isListening;
+          if (isListening) {
+            $("#microphoneIcon").css("color", "red");
+            startRecording();
+          } else {
+            $("#microphoneIcon").css("color", "white");
+            stopRecording();
+          }
         });
       });
+    </script>
+    <script>
+      // $(document).ready(function () {
+      //   $("#listenButton").click(function () {
+      //     $.ajax({
+      //       url: "/listen_speech",
+      //       type: "POST",
+      //       data: {
+      //         rawdata:base64,
+      //       },
+      //       success: function (data) {
+      //         appendMessage(
+      //           "You",
+      //           "../static/img/ping.png",
+      //           "right",
+      //           data.user_message
+      //         );
+      //         appendMessage(
+      //           "JJr. Ask",
+      //           "../static/img/robo.png",
+      //           "left",
+      //           data.bot_response
+      //         );
+      //       },
+      //       error: function () {
+      //         alert("Error: No speech detected");
+      //       },
+      //     });
+      //   });
+      // });
     </script>
   </body>
 </html>

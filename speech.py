@@ -15,12 +15,12 @@ intents = json.loads(open('Intents.json').read())
 words = pickle.load(open('texts.pkl','rb'))
 classes = pickle.load(open('labels.pkl','rb'))
 
-def listen_to_speech():
+def listen_to_speech(audio_path):
     recognizer = sr.Recognizer()
     # with sr.Microphone() as source:
     #     print("Mendengarkan...")
     #     audio = recognizer.listen(source)
-    audiowav = sr.AudioFile("temp.wav")
+    audiowav = sr.AudioFile(audio_path)
     # Initialize recognizer class                                       
 
     with audiowav as source:
@@ -35,7 +35,26 @@ def listen_to_speech():
     except sr.RequestError as e:
         print(f"Tidak dapat menghubungi layanan Google Speech Recognition; {e}")
         return ""
+def convert_text_to_Audio(audio_path):
+    recognizer = sr.Recognizer()
+    # with sr.Microphone() as source:
+    #     print("Mendengarkan...")
+    #     audio = recognizer.listen(source)
+    audiowav = sr.AudioFile(audio_path)
+    # Initialize recognizer class                                       
 
+    with audiowav as source:
+        print("Mendengarkan...")
+        audio = recognizer.record(source)
+    try:
+        text = recognizer.recognize_google(audio, language="id-ID")
+        return text
+    except sr.UnknownValueError:
+        print("Maaf, saya tidak bisa mengerti audio tersebut.")
+        return ""
+    except sr.RequestError as e:
+        print(f"Tidak dapat menghubungi layanan Google Speech Recognition; {e}")
+        return ""
 def clean_up_sentence(sentence):
     # tokenize the pattern - split words into array
     sentence_words = nltk.word_tokenize(sentence)

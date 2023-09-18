@@ -1,6 +1,7 @@
 gunicorn
 flask
 flask_sqlalchemy
+flask_cors
 tensorflow
 numpy
 nltk
