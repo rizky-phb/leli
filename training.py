@@ -15,7 +15,7 @@ words=[]
 classes = []
 documents = []
 ignore_words = ['?', '!']
-data_file = open('static/newdataset.json').read()
+data_file = open('intents.json').read()
 intents = json.loads(data_file)
 
 
@@ -71,10 +71,10 @@ for doc in documents:
     training.append([bag, output_row])
 # shuffle our features and turn into np.array
 random.shuffle(training)
-training = np.array(training)
+trainingg = np.array(training)
 # create train and test lists. X - patterns, Y - intents
-train_x = list(training[:,0])
-train_y = list(training[:,1])
+train_x = list(trainingg[:,0])
+train_y = list(trainingg[:,1])
 print("Training data created")
 
 

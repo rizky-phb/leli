@@ -102,7 +102,9 @@ def chat():
     )
     db.session.add(data_log)
     db.session.commit()
-    return chatbot.chatbot_response(userText)
+    respon = chatbot.chatbot_response(userText)
+    print(respon)
+    return respon
 
 @flask_app.route("/log")
 def logactivity():

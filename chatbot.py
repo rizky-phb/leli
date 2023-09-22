@@ -52,6 +52,7 @@ def predict_class(sentence, model):
     return return_list
 
 def getResponse(ints, intents_json):
+    print(ints)
     tag = ints[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
@@ -62,7 +63,9 @@ def getResponse(ints, intents_json):
 
 def chatbot_response(msg):
     ints = predict_class(msg, model)
+    
     res = getResponse(ints, intents)
+    print(res)
     return res
 
 
