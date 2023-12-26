@@ -3,11 +3,14 @@ import os
 from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 import datetime
+import base64,json,random,pickle
 import chatbot
+import chatbot_adi
 from speech import listen_to_speech, chatbot_response
-import base64
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
+from tensorflow.keras.models import load_model
+
 
 # Create flask app
 flask_app = Flask(__name__)
@@ -93,6 +96,13 @@ def listen_speech():
 
 @flask_app.route('/get')
 def chat():
+
+    model = load_model('model.h5',compile=False)
+    intents = json.loads(open('Intents.json').read())
+    words = pickle.load(open('texts.pkl','rb'))
+    classes = pickle.load(open('labels.pkl','rb'))
+
+
     userText = request.args.get('msg')
     tanggal = datetime.datetime.now()
     tanggal_baru = tanggal.strftime('%Y-%m-%d %H:%M:%S')
@@ -100,17 +110,40 @@ def chat():
         tanggal=tanggal_baru,
         aktivitas="User Bertanya ke Chatbot",
     )
+    print(data_log)
     db.session.add(data_log)
     db.session.commit()
-    respon = chatbot.chatbot_response(userText)
+    respon = chatbot.chatbot_response(userText,model,words,classes,intents)
     print(respon)
     return respon
 
 @flask_app.route("/log")
 def logactivity():
     return render_template('log_activity.html', logaktiv=log_activity.query.all())
+@flask_app.route('/chatbot_adi/get')
+def chatbot_adi():
 
+  model = load_model('chatbot_adi/model.h5',compile=False)
+  intents = json.loads(open('chatbot_adi/content.json').read())
+  words = pickle.load(open('chatbot_adi/texts.pkl','rb'))
+  classes = pickle.load(open('chatbot_adi/labels.pkl','rb'))
+
+  userText = request.args.get('msg')
+  tanggal = datetime.datetime.now()
+  tanggal_baru = tanggal.strftime('%Y-%m-%d %H:%M:%S')
+  data_log = log_activity(
+      tanggal=tanggal_baru,
+      aktivitas="User Bertanya "+userText+" ke Chatbot Adi",
+  )
+  print(data_log)
+  db.session.add(data_log)
+  db.session.commit()
+
+  respon = [chatbot.chatbot_response(userText,model,words,classes,intents)]
+  print(respon)
+  return respon
 CORS(flask_app)
+
 #ssl_context='adhoc',
 if __name__ == "__main__":
     flask_app.run(host="0.0.0.0", debug=True)

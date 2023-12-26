@@ -1,0 +1,208 @@
+{
+  "id": 134,
+  "intents": [
+    {
+      "context_set": "",
+      "patterns": [
+        "Hai ",
+        "Hello",
+        "Good",
+        "hallo"
+      ],
+      "responses": [
+        "Hai selamat datang Di Sistem Desa Pangkah. saya adalah Ai bantuan. apa ada yang bisa saya bantu ?"
+      ],
+      "tag": "hai"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "apa itu Desa Pangkah?",
+        "deskripsi Desa Pangkah",
+        "dimana Desa Pangkah",
+        "apa itu Pangkah?",
+        "deskripsi Pangkah",
+        "dimana Pangkah",
+        "profile desa"
+      ],
+      "responses": [
+        "Desa Pangkah adalah sebuah desa yang terletak di Kabupaten Tegal, Jawa Tengah, Indonesia. Tegal merupakan salah satu kabupaten di provinsi Jawa Tengah. Desa Pangkah, seperti desa-desa lainnya, merupakan unit pemerintahan paling dasar di Indonesia,<a href ='https://maps.app.goo.gl/FXPiYLPCXzzH4fu77'>maps</a> "
+      ],
+      "tag": "pangkah"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "apa sejarah desa pangkah?",
+        "sejarah pangkah",
+        "apa saja desa pangkah",
+        "bagaimana desa pangkah",
+        "asal muasal desa pangkah",
+        "asal usul pangkah",
+        "apa nilai sejarah desa pangkah?"
+      ],
+      "responses": [
+        "Sejarah Desa Pangkah menurut cerita tutur dari tetua pendahulu ada berbagai versi. Hal ini sangat dimungkinkan karena nama Pangkah yang sekarang kita kenal tidak menunjukan suatu tempat atau wilayah tertentu.Desa Pangkah yang ada sekarang ini terdiri dari 7(tujuh) pedukuhan, yaiut : Pesawahan, Benda , Kauman, Sabrang, Posong, Wungu, Waringin.Dari 7(tujuh)pedukuhan tersebut tidak dikenal nama pedukuhan Pangkah. Menurut penuturen para tetua sejarah Desa Pangkah sangat berhubungan erat dengan keberadaan Pabrik Gula Pangkah.  => <a href ='/sejarah'>Baca Selengkapnya</a>"        
+      ],
+      "tag": "sejarah desa pangkah"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "mitos desa pangkah",
+        "legenda desa pangkah",
+        "apa saja mitos desa pangkah?",
+        "apa saja legenda desa pangkah?",
+        "apa saja mitos/legenda desa pangkah?"
+      ],
+      "responses": [
+        "Diceritakan oleh para tetua pendahulu bahwa nama Desa Pangkah disebut-senutbersal dari nama Pabrik Gula Pangka. Sedangkan nama Pangka itu sendiri konon diambil dari nama sebuah pohon kelapa yang bercang. Dalam bahasa Tegal disebut 'Kelapa Ngepang' yang tumbuh ditempat pendirian pabrik tersebut. PG.Pangka adalah perusahaan (pabrik) penghasil gula pasir satu-satunya yang masih exis di kabupaten Tegal. Dahulu ada beberapa pabrik gula pasir seperti :Kemanglen, Dukuh Wringin, Pagongan, Kemantran, Ujungrusi, dan Balapulang yang merupakan peninggalan Belanda. Pabrik GulaPangka didirikan pada jaman kolonial Belanda tahun 1832 oleh pemiliknya 'NV MIJTOT EXPLOITATIE DERT SUIKER FABRIKEN' dikelola oleh NV KOSY dan SUCIER yang berkedudukan di Surakarta. Pada waktu pendiriannya ribuan tenaga kerja pribumi dikerahkan dengan sistim kerja paksa oleh pemerintah kolonial Belanda. Berdasarkan Undang-undang nomor 86 tahun 1958 PG.Pangka telah diambil alih oleh Pemerintah Republik Indonesia atau istilah popular pada masa itu di nasionalisasi. Jika dikaitkan dengan pendirian pabrik Gula Pangka oleh kolonial Belanda dengan sistim kerja paksa, beberapa tetua menuturkan bahwa sejarah Desa Pangkah bermula dari datangnya tenaga kerja pribumi yang berasal dari Ujung Pangkah di Jawa Timur. Para pekerja paksa tersebut tinggal di tempat pendirian pabrik dan menamai tempat tersebut 'Pangkah' sesuai asal mereka.Baca Selengkapnya => <a href ='/sejarah'>Baca Selengkapnya</a>"
+      ],
+      "tag": "mitos / legenda desa pangkah"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "siapa kepala desa pangkah?",
+        "siapa kades pangkah?",
+        "Kades",
+        "berapa tahun pemelihan kepala desa?",
+        "kapan pemilihan kepala desa",
+        "anggota siapa aja?",
+        "pemerintahan desa?",
+        "pemerintahan",
+        "anggota",
+        "siapa saja anggotanya?"
+      ],
+      "responses": [
+        "Berdasarkan kutipan dpd.go.id 'Ini sudah sesuai Pasal 39 dari UU Desa yang ada sekarang. Ayat 1 menyatakan Kepala Desa memegang jabatan selama enam tahun terhitung sejak tanggal pelantikan. Sementara Ayat 2 menyatakan Kepala Desa dapat menjabat paling banyak tiga kali masa jabatan secara berturut-turut atau tidak secara berturut-turut.' untuk melihat siapa Kepala desa sekarang bisa di lihat di sini. <a href ='/pemerintahan_desa '>Baca Selengkapnya</a>"
+      ],
+      "tag": "pemerintahan"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "apa yang unik dari desa pangkah?",
+        "ciri khas desa pangkah?",
+        "ciri khas",
+        "tempat wisata desa pangkah?"
+        
+      ],
+      "responses": [
+        "Di Desa pangkah Terdapat Pabrik Gula Pangkah peninggalan Hindia Belanda, ada lokomotif antik yang digunakan sebagai alat angkut tebu pada masa kolonial Belanda. Sekarang digunakan sebagai objek wisata saat acara panen tebu massal atau warga sekitar menamakannya dengan istilah metikan. dan warga sekitar sering membuat kerajinan batik"
+      ],
+      "tag": "ciri khas"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "pekerjaan apa saja yang dilakukan warga desa pangkah?",
+        "pekerjaan warga?",
+        "pekerjaan warga desa?",
+        "perkerjaan yang dilakukan warga desa pangkah"
+        
+      ],
+      "responses": [
+        "Di Desa pangkah warganya biasanya bekerja sebagai petani, pedagang, peternak, pengrajin batik dan lain lain. <a href ='/monografi'>Baca Selengkapnya</a>"
+      ],
+      "tag": "pekerjaan"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "desa pangkah sebelah mana?",
+        "di samping desa pangkah ada desa apa saja?",
+        "desa pangkah ada disebalah mana?",
+        "desa pangkah ada disebalah siapa?",
+        "desa pangkah ada disamping siapa?"
+        
+      ],
+      "responses": [
+        "Di utara ada Desa Talok, di selatan ada Desa Penusupan, di timur ada Desa Bogares Lor, dan di barat ada Desa Talok <a href ='/geografi'>Baca Selengkapnya</a>"
+      ],
+      "tag": "sebelah mana"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "dana desa?",
+        "dana desa pangkah?",
+        "dana",
+        "dana desa"
+        
+      ],
+      "responses": [
+        "dana desa bisa di lihat disini Baca Selengkapnya => <a href ='/dana/2022'>Baca Selengkapnya</a>"
+      ],
+      "tag": "dana desa"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "pembuatan surat?",
+        "cara membuat surat?",
+        "surat",
+        "surat keperluan desa pangkah",
+        "surat kemiskinan"
+        
+      ],
+      "responses": [
+        "Untuk membuat surat atau keperluan lainya masih secara manual. mohon maaf jika ada keperluan bisa hubingi kontak atau datang langsung ke kantor desa di saat jam kerja"
+      ],
+      "tag": "keperluan/surat"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "jam kerja pemerintahan desa?",
+        "jam kerja",
+        "jam kerja di maulai jam berapa?",
+        "jam kerja jam berapa?",
+        "jam berapa?"
+        
+      ],
+      "responses": [
+        "Jam kerja mulai jam 8 pagi sampai jam 5 sore dari hari senin sampai jum'at, jika ada keperluan mendadak tolong hubungi kontak yang tersedia"
+      ],
+      "tag": "jam kerja"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "visi dan misi desa pangkah",
+        "visi desa pangkah",
+        "visi",
+        "misi desa pangkah",
+        "misi"
+        
+      ],
+      "responses": [
+        "Visi Desa <br> Terbangunnya tata kelola pemerintahan desa yang baik, bersihdan jujur serta melayani masyarakat desa Pangkah secara menyeluruh demi terwujudnya desa Pangkah yang maju dan sejahtera yang berakar pada nilai Pancasila serta budaya dan agama <br> Misi Desa <br> 1. Meningkatkan kapasitas kelembagan dan sumber daya aparatur pemerintab desa demi terwujudnya lembaga yang bisa berperan sesuai tugas dan fungsinya, sehingga dapat memberikan pelayanan yang terbaik kepada masyarakat <br> 2. Meningkatkan kesehatan, kebersihan desa serta mengusahakan Jaminan Kesehatan masyarakat melalui program pemerintah. <br> 3. Mengoptimalkan kinerja di aparatur pemerintah desa secaraa maksimal sesuaai dengan tugas pokok fungsi agar tercapai pelayanana yang baik kepada masyarakat. <br> 4. Mewujudkan pemerintahan desa yang baik dan bersih melalui peningkatan pelayanan pemerintahan umum. <br> 5. Meningkatkan kesejahteraan masyarakat desa dengan mewujudkan Badan Usaha Milik Desa (BUMDes) untuk membuka lapangan kerja bagi masyarakat desa, serta meningkatkan produksi rumah tangga kecil. <br> 6. Memberdayakan SDMyang sudah ada dan memberikan ruang bagi generasi muda melalui wadah Karang Taruna yang berbasis pada IPTEK dan Kearifan budaya lokal. <br> 7. Meningkatkan kerukunan, toleransi, dan kebersamaan dalam kehidupan masyarakat desa Pangkah. <br> 8. Pemeliharaan, perbaikan, dan pengadan sarana dan prasarana fasilitas lingkungan dengn mengedepankan prinsip prioritas kebermanfatan. <br> 9. Pemetaan potensi dan sumber dayaa untuk mengidentifikasi kekuatan, kelemahan, ancaman, dan peluang, bagi terciptanya masyarakat Pangkah yang sejahtera.<br> 10. Peningkatan usaha-usaha budidaya dan promosi kuliner makanan dan jajanan warga desa Pangkah untuk meningkatkan kesehahteraan.<br> 11. Mengelola sumber pendapatan non PAD secara jujur, transparan, dan proporsional untuk kesejahteraan masyarakat. <br> 12. Meningkatkan usah-usaha pertanian, perdagangan, uintukkesejaahteraan masyarakat. <br> 13. Mewujudkan Pemerintah Desa Pangkah yang baik dan bersih 9 good govermance) melalui peningkatan pelayanan pemerintahan umum"
+      ],
+      "tag": "visi dan misi"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+        "bukti kegiatan?",
+        "foto kegiatan",
+        "galeri"
+        
+      ],
+      "responses": [
+        "bukti dari kegiatan dapat dilihat galeri Baca Selengkapnya => <a href ='/galeri'>Baca Selengkapnya</a>"
+      ],
+      "tag": "galeri"
+    },
+    {
+      "context_set": "",
+      "patterns": [
+          ""
+        ],
+      "responses": [
+        "error coba pertanyaan lain atau jika ada keperluan mendadak tolong hubungi kontak yang tersedia"
+      ],
+      "tag": "error"
+    }
+  ]
+}
